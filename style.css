@@ -1,0 +1,191 @@
+
+@font-face {
+    font-family: "kajiro";
+    src: url(./fonts/Kajiro\ Bold.woff2);
+}
+
+@font-face {
+    font-family: "Quest";
+    src: url(./fonts/Questrial-Regular.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quest";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+li{
+    list-style-type: none;
+    color: #fff;
+    display: inline-block;
+    padding-inline: 20px;
+    pointer-events: all;
+}
+
+button{
+    outline: 0;
+    border: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: "kajiro" !important;
+    pointer-events: all;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#background{
+    height: 100%;
+    width: 100%;
+}
+
+#background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.top{
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000055;
+}
+
+.content{
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    padding: 40px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    vertical-align: middle;
+}
+
+nav li{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.hero-left{
+    min-width: 50%;
+}
+
+.hero-left .elem{
+    height: 9vw;
+    overflow: hidden;
+    position:relative;
+}
+
+.hero-left .elem h1:nth-child(1){
+    top: 0;
+}
+
+.hero-left .elem h1{
+    font-size: 11vw;
+    font-family: "kajiro";
+    font-weight: 100;
+    color: #fff;
+    line-height: .9;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    text-shadow: -5px 0 10px #020a1629;
+}
+
+.btn{
+    font-size: 3vw;
+    padding: .8vw 3vw;
+    margin-top: 2vw;
+    letter-spacing: 2px;
+}
+
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 25px;
+    width: 20%;
+    color: #fff;
+}
+
+.hero-right p{
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.hero-right p:nth-child(4){
+    margin-top: 4VW;
+}
+
+.small-img-container{
+    height: 132px;
+    width: 199px;
+    background-color: skyblue;
+}
+
+.media{
+    display: none;
+}
+
+@media (max-width: 950px){
+
+.media p{
+    font-size: 4vw;
+}
+    .media{
+        display: block;
+    }
+    .main{
+        display: none;
+    }
+}
+
+
+
+
+
+
